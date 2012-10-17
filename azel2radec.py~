@@ -113,7 +113,8 @@ def ct2lst(julian_date):
 # in order to reduce function calls
 def azel2radec_v(julian_date, azimuth, elevation, latitude, longitude_deg):
     """Convert from horizon coordinates (azimuth-elevation) to celestial 
-    coordinates (right ascension-declination)
+    coordinates (right ascension-declination) - Viktor Version of 
+    AZEL2RADEC.PRO
     
     Input:
     julian_date   = Julian date (scalar or vector double)
