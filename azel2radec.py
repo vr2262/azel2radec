@@ -6,7 +6,8 @@ jdcnv      : converts a Gregorian time to a Julian Date
 ct2lst     : converts Civil Time to Greenwich Sidereal Time
 azel2radec : converts from horizon to celestial coordinates
 
-The azel2radec module also provides a useful constant, second_jul, which is the conversion of a local second to Julian time.
+The azel2radec module also provides a useful constant, second_jul, which is the
+conversion of a local second to Julian time.
 
 The azel2radec module is based on code available at
 http://idlastro.gsfc.nasa.gov/
