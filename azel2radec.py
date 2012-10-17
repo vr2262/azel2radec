@@ -111,7 +111,7 @@ def ct2lst(julian_date):
 # IMPORTANT: Latitude is in RADIANS
 #            Longitude is in DEGREES
 # in order to reduce function calls
-def azel2radec_v(julian_date, azimuth, elevation, latitude, longitude_deg):
+def azel2radec(julian_date, azimuth, elevation, latitude, longitude_deg):
     """Convert from horizon coordinates (azimuth-elevation) to celestial 
     coordinates (right ascension-declination)
     
@@ -141,7 +141,7 @@ def azel2radec_v(julian_date, azimuth, elevation, latitude, longitude_deg):
     azimuth = numexpr.evaluate('azimuth - pi')
     
     # Get the Greenwich Sidereal Time of the date
-    gst = ct2lst_v(julian_date)
+    gst = ct2lst(julian_date)
     
     # Get the Local Sidereal Time
     lst = numexpr.evaluate('gst + longitude_deg / 15.0')
