@@ -28,23 +28,23 @@ big_n = int(duration * rate + 1)
 times = np.linspace(0, duration, big_n)
 time_data = start_time + a2r.second_jul * times
 
-# scan speed in degrees per second
-speed = 5
+# Scan speed in degrees per second
+speed = 5.0
 
 # Peak amplitude for sine oscillations
 peak_amplitude = 5.0
 
 frequency = 2 * np.pi * speed / (4 * peak_amplitude)
 
-# azimuth data
+# Azimuth data
 azimuth = peak_amplitude * np.sin(frequency * times)
 azimuth_rad = np.radians(azimuth)
 
-# elevation data
+# Elevation data
 elevation = peak_amplitude * np.sin(frequency * times) + 45.0
 elevation_rad = np.radians(elevation)
 
-ra, dec = a2r.azel2radec(time_data, azimuth_rad, elevation, \
+ra, dec = a2r.azel2radec(time_data, azimuth_rad, elevation_rad, \
                          latitude, longitude_deg)
 
 np.save('ra.npy', ra)
