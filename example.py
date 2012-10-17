@@ -9,7 +9,7 @@ import numpy as np
 
 # Location of the telescope
 latitude = np.radians(30.0) # 30 degrees North
-longitude_deg = 60.0 # 60 degrees east
+longitude_deg = 60.0 # 60 degrees East
 
 # Date and time at which the scan begins (UTC)
 # Inputs are year, month, day, hour (float)
