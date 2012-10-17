@@ -16,6 +16,9 @@ Typically ct2lst is only used internally to azel2radec. The assumed use case is
 that one knows the local time (UTC) and uses jdcnv to convert to a Julian Date,
 which is fed into azel2radec.
 
+The module also provides a useful constant, second_jul, which is the conversion
+of a local second to Julian time.
+
 The azel2radec module is based on code available at
 http://idlastro.gsfc.nasa.gov/
 and
