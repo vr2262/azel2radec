@@ -24,7 +24,7 @@ rate = 100
 # Number of data points
 big_n = int(duration * rate + 1)
 
-# Array of sample times per beam
+# Array of sample times
 times = np.linspace(0, duration, big_n)
 time_data = start_time + a2r.second_jul * times
 
